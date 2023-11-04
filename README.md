@@ -1,4 +1,4 @@
-Prerequisites:
+Requirements:
 Java 1.7
 TestNG
 Selenium 4.12.1
