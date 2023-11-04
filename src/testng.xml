@@ -1,0 +1,55 @@
+<suite name="Parameter test Suite" verbose="1">
+	<!-- This parameter will be passed to every test in this suite -->
+	<test name="Scenario 1 Test Login Success">
+		<parameter name="correct-user-name" value="standard_user" />
+		<parameter name="correct-password" value="secret_sauce" />
+		<classes>
+			<class name="AssignmentScenarios.Scenario1">
+				<methods>
+					<include name="testLoginSuccess" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Scenario 1 Test Login Failure">
+		<parameter name="wrong-user-name" value="test_user" />
+		<parameter name="wrong-password" value="test_password" />
+		<classes>
+			<class name="AssignmentScenarios.Scenario1">
+				<methods>
+					<include name="testLoginFailure" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Scenario 2 Test Sort Option">
+		<parameter name="correct-user-name" value="standard_user" />
+		<parameter name="correct-password" value="secret_sauce" />
+		<classes>
+			<class name="AssignmentScenarios.Scenario2">
+				<methods>
+					<include name="testSortOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Scenario 3 Test Basket Items Count">
+		<parameter name="correct-user-name" value="standard_user" />
+		<parameter name="correct-password" value="secret_sauce" />
+		<parameter name="expected-items-count" value="3" />
+		<classes>
+			<class name="AssignmentScenarios.Scenario3">
+				<methods>
+					<include name="testBasketItemsCount" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+	
+</suite>
